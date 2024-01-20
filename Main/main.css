@@ -1,0 +1,270 @@
+/* Основные стили шрифта */
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_mediumitalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 24px;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-button,
+.discord-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-img,
+.discord-img {
+    height: 50px;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-navigation a:hover {
+    background-color: #b69322ef;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.login-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #b69322ef;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.mirage-section {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+
+.mirage-banner h1 {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    font-size: 160px;
+    margin-bottom: 90px;
+}
+
+.mirage-logo-overlay {
+    position: absolute;
+    top: 49%;
+    right: 54%;
+    transform: translate(-50%, -15%);
+    z-index: 2;
+    width: 100px;
+    height: 110px;
+}
+
+.mirage-button-combined {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 3px solid #FFD97E;
+    background: var(--PTA, linear-gradient(261deg, #E3953F 0%, #000 100%));
+    padding: 5px 10px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 0;
+    width: 20%;
+    text-decoration: none;
+}
+
+.mirage-button-combined:hover {
+    background: linear-gradient(to right, #000, #e6c300);
+    border-color: #aa9a3f;
+}
+
+.button-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logo-part {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.button-logo {
+    height: 30px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.text-part {
+    font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.server-status {
+    border-radius: 10px;
+    margin-top: 8px;
+    font-size: 1.5em;
+    
+}
+
+.online-count {
+    color: #b69322ef;
+    background-image: linear-gradient(to right, #000, #e6c300);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.mirage-button-combined {
+    text-align: center;
+}
+
+.logo-part {
+    border-right: 0;
+    border-radius: 10px;
+}
+
+.mirage-interaction-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mirage-interaction-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 11%;
+}
+
+.mirage-button-combined .button-part.logo-part::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: calc(110% + 1px);
+    background-color: #FFD97E;
+    left: 25%;
+    top: -4px;
+    bottom: -4px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    stroke-width: 4px;
+    stroke: #FFD97E;
+
+
+}
+
+.mirage-button-combined:hover .button-part.logo-part::after {
+    background-color: #aa9a3f;
+}
+
+.logo-button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 20px;
+    border: 3px solid #FFD97E;
+    background: var(--PTA, linear-gradient(261deg, #E3953F 0%, #000 100%));
+    transition: all 0.3s ease;
+}
+
+.logo-button:hover {
+    background: linear-gradient(to right, #000, #e6c300);
+    border-color: #aa9a3f;
+    
+}
+
+.mirage-title-wrapper {
+    position: relative; 
+}
+
+.mirage-title-wrapper::before {
+    content: ''; 
+    position: absolute; 
+    bottom: -80px; 
+    left: 24%; 
+    width: 50%; 
+    height: 5px; 
+    background: linear-gradient(to left, #000, #b69322ef); 
+
+}
