@@ -1,0 +1,180 @@
+/* Основные стили шрифта */
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_mediumitalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 24px;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    max-width: 130px;
+}
+.left-section span {
+    font-size: 18px; 
+}
+
+.logo-button,
+.discord-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-img{
+    height: 30px;
+}
+
+
+.discord-img {
+    height: 50px;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Занимаем всю доступную ширину */
+    max-width: 300px;
+    
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-navigation a:hover {
+    background-color: #b69322ef;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.login-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #b69322ef;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.mirage-button-combined {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 3px solid #FFD97E;
+    background: var(--PTA, linear-gradient(261deg, #E3953F 0%, #000 100%));
+    padding: 5px 10px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 0;
+    width: 20%;
+    text-decoration: none;
+}
+
+.mirage-button-combined:hover {
+    background: linear-gradient(to right, #000, #e6c300);
+    border-color: #aa9a3f;
+}
+
+.mirage-button-combined {
+    text-align: center;
+}
+
+.logo-button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px; 
+    height: 40px;
+    border-radius: 15px;
+    border: 3px solid #FFD97E;
+    background: var(--PTA, linear-gradient(261deg, #E3953F 0%, #000 100%));
+    transition: all 0.3s ease;
+
+}
+
+.logo-button:hover {
+    background: linear-gradient(to right, #000, #e6c300);
+    border-color: #aa9a3f;
+}
+
+.mirage-title-wrapper {
+    position: relative; 
+}
+
+.mirage-title-wrapper::before {
+    content: ''; 
+    position: absolute; 
+    bottom: -80px; 
+    left: 24%; 
+    width: 50%; 
+    height: 5px; 
+    background: linear-gradient(to left, #000, #b69322ef); 
+}
+
+.mirage {
+    text-align: center;
+
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 20px; /* Вы можете настроить отступ по своему усмотрению */
+}
+
+.center-text h1 {
+    font-size: 36px; /* Настройте размер шрифта по вашему выбору */
+    color: #fff;
+}
