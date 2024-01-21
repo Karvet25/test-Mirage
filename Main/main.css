@@ -23,7 +23,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Gotham Pro', sans-serif;
     font-size: 24px;
     background-color: #000000;
 }
@@ -31,6 +30,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
+    font-family: 'Gotham Pro', italic;
     align-items: center;
     padding: 20px 20px;
 }
@@ -38,7 +38,7 @@ body {
 .left-section {
     display: flex;
     align-items: center;
-    max-width: 130px;
+    max-width: 140px;
 }
 .left-section span {
     font-size: 18px; 
@@ -55,6 +55,7 @@ body {
 
 .logo-img{
     height: 30px;
+    margin-right: 8px;
 }
 
 
@@ -164,17 +165,27 @@ body {
     background: linear-gradient(to left, #000, #b69322ef); 
 }
 
-.mirage {
-    text-align: center;
-
-}
 
 .center-text {
     text-align: center;
+    font-family: 'Gotham Pro', normal;
     margin-top: 20px; /* Вы можете настроить отступ по своему усмотрению */
 }
 
 .center-text h1 {
-    font-size: 36px; /* Настройте размер шрифта по вашему выбору */
     color: #fff;
+    font-size: 260px;
+    letter-spacing: -30px;
+ 
+}
+
+
+#logo-text {
+    position: absolute; /* Абсолютное позиционирование относительно .center-text */
+    top: 46%; /* Центрируем по вертикали */
+    left: 33%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Точное центрирование изображения */
+    z-index: 0;
+    max-width: 150px;
+    color: rgb(227, 149, 63);
 }
